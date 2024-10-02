@@ -1,8 +1,12 @@
 # Para Meu Currículo
 *Projeto antigo em Portugol transcrito em C#*
+
 ![PORTUGOL CARDAPIO](https://github.com/user-attachments/assets/424658b1-c45f-472b-a623-244320a693e4)
 ## CARDÁPIO 'CARVÃO GRILL'
 Tive a ideia de reutilizar um exercício antigo, anteriormente realizado como pseudocódigo, utilizando a linguagem C#. A atividade consistia em criar um pseudocódigo que simulasse o funcionamento de um cardápio virtual de uma lanchonete fictícia, a "Carvão Grill.
+
+![gdb print cardapio](https://github.com/user-attachments/assets/c4f91010-226c-413b-bdc5-30475ac5813a)
+
 ### O que foi utilizado: 
 Biblioteca System, laços de repetição e tratamento de erros.
 
