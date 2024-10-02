@@ -38,39 +38,49 @@ public class Program
 switch (lanch3s) 
 {
 case 1: 
+       Console.ForegroundColor = ConsoleColor.DarkYellow;	
        Console.WriteLine($" - {quantlanche} X-Burguer R$20,90");
         valorlan = quantlanche * 20.9m;
 break;
-case 2: 
+case 2:
+	Console.ForegroundColor = ConsoleColor.DarkYellow;	
         Console.WriteLine($"- {quantlanche} X-Tudo R$31,90");
         valorlan = quantlanche * 31.2m;
 break;
 case 3: 
+	 Console.ForegroundColor = ConsoleColor.DarkYellow;	
          Console.WriteLine($"- {quantlanche} X-Bacon R$22,30");
          valorlan = quantlanche * 22.3m;
 break;
 case 4:
+      Console.ForegroundColor = ConsoleColor.DarkYellow;
       Console.WriteLine($"- {quantlanche} X-Salada R$25,00");
-       valorlan = quantlanche * 25m;
+      valorlan = quantlanche * 25m;
 break;
 case 5:
+       Console.ForegroundColor = ConsoleColor.DarkYellow;
        Console.WriteLine($"- {quantlanche} X-Frango R$21,50");
        valorlan = quantlanche * 21.5m;
 break;
 case 6:
+       Console.ForegroundColor = ConsoleColor.DarkYellow;       
        Console.WriteLine ($"- {quantlanche} X-Calabresa R$21,50");
        valorlan = quantlanche * 21.5m;
 break;
 case 7: 
+       Console.ForegroundColor = ConsoleColor.DarkYellow;	
        Console.WriteLine($"- {quantlanche} Misto Quente R$15,20");
-					   valorlan= quantlanche * 15.2m;
+       valorlan= quantlanche * 15.2m;
 break;
 case 8:
-       Console.WriteLine($"- {quantlanche} Pão com Ovo R$10,00");
+        Console.ForegroundColor = ConsoleColor.DarkYellow;
+	Console.WriteLine($"- {quantlanche} Pão com Ovo R$10,00");
         valorlan = quantlanche * 10m;
 break;
+// Mensagem de erro caso cliente não escolha lanche		
 default:
-       Console.WriteLine("- Lanche ", lanch3s, " não incluso no nosso cardápio!"); 
+       Console.ForegroundColor = ConsoleColor.Red;
+	Console.WriteLine("- Lanche ", lanch3s, " não incluso no nosso cardápio! Escolha um item listado para dar continuidade ao seu pedido"); 
 break;
    }
 
@@ -78,73 +88,91 @@ break;
 switch (porc0es)
     {
 case 1:
-       Console.WriteLine($"- {quantporc} Batata Frita P R$12,00\t");
-       valorpor = quantporc * 12m;
+      Console.ForegroundColor = ConsoleColor.DarkYellow; 
+      Console.WriteLine($"- {quantporc} Batata Frita P R$12,00\t");
+      valorpor = quantporc * 12m;
 break;
 case 2:
-        Console.WriteLine($"- {quantporc} Batata Frita M R$14,00\t");
-        valorpor = quantporc * 14m;
+      Console.ForegroundColor = ConsoleColor.DarkYellow;
+      Console.WriteLine($"- {quantporc} Batata Frita M R$14,00\t");
+      valorpor = quantporc * 14m;
 break;
 case 3:
-       Console.WriteLine($"- {quantporc} Batata com Bacon R$18,00\t");
-       valorpor = quantporc * 18m;
+      Console.ForegroundColor = ConsoleColor.DarkYellow;
+      Console.WriteLine($"- {quantporc} Batata com Bacon R$18,00\t");
+      valorpor = quantporc * 18m;
 break;
 case 4:
-       Console.WriteLine($"- {quantporc} Salada Completa R$18,60\t");
-        valorpor = quantporc * 18.6m;
+      Console.ForegroundColor = ConsoleColor.DarkYellow;
+      Console.WriteLine($"- {quantporc} Salada Completa R$18,60\t");
+      valorpor = quantporc * 18.6m;
 break;
 case 5:
-       Console.WriteLine($"- {quantporc} Pastel Frito R$11,50\t");
-        valorpor = quantporc * 11.5m;
+      Console.ForegroundColor = ConsoleColor.DarkYellow;
+      Console.WriteLine($"- {quantporc} Pastel Frito R$11,50\t");
+      valorpor = quantporc * 11.5m;
 break;
 case 6:
+       Console.ForegroundColor = ConsoleColor.DarkYellow;
        Console.WriteLine($"- {quantporc} Coxinhas R$8,70\t");
-        valorpor = quantporc * 8.7m;
+       valorpor = quantporc * 8.7m;
 break;
 
 // Caso cliente não escolha uma porção
 default: 
        if (quantporc != 1 ||quantporc != 2 || quantporc !=  3 || quantporc != 4 ||quantporc != 5 || quantporc != 6)
 {
+       Console.ForegroundColor = ConsoleColor.Red;
        valorpor = 0;
        Console.WriteLine("- Sem Porção 00,00");
 }
 break;
 }
-
+// Condicionais para bebidas
 switch(b3bidas)
  {
 case 1:
+	Console.ForegroundColor = ConsoleColor.DarkYellow;
        Console.WriteLine($"- {quantbebi} Suco de Fruta R$10,50");
         valorbeb = quantbebi * 10.5m;
 break;
 case 2: 
+	Console.ForegroundColor = ConsoleColor.DarkYellow;
        Console.WriteLine($"- {quantbebi} Água Mineral R$2,00");
         valorbeb = quantbebi * 2m;
 break;
-case 3: 
+case 3:
+	Console.ForegroundColor = ConsoleColor.DarkYellow;
 	Console.WriteLine ($"- {quantbebi} Refrigerante Lata R$10,30");
 	 valorbeb = quantbebi * 10.3m;
 break;
 case 4:
+	Console.ForegroundColor = ConsoleColor.DarkYellow;
 	 Console.WriteLine ($"- {quantbebi} Refrigerante 1L R$12,90");
 	  valorbeb = quantbebi * 12.9m;
 break;
 case 5: 
+	Console.ForegroundColor = ConsoleColor.DarkYellow;
 	Console.WriteLine ($"- {quantbebi} Refrigerante 2L R$16,50");
 	 valorbeb = quantbebi * 16.5m;
 break;
 case 6:
+       Console.ForegroundColor = ConsoleColor.DarkYellow;
        Console.WriteLine ($"- {quantbebi} Limonada R$8,50");
 	 valorbeb = quantbebi * 8.5m;
 break;
+// caso cliente não escolha bebida
 default:
 	if (quantbebi != 1 || quantbebi != 2 || quantbebi != 3 || quantbebi != 4 || quantbebi != 5 || quantbebi != 6)
 	 valorbeb = 0;
+	Console.ForegroundColor = ConsoleColor.Red;
          Console.WriteLine ("- Sem Bebida 00,00");
 break;
 }
+// Imprime total a pagar:
 total = valorlan + valorpor + valorbeb;
+Console.ForegroundColor = ConsoleColor.DarkYellow;
 Console.WriteLine($"\nTOTAL A PAGAR: R${total:F2}\n");  
+Console.WriteLine("BOM APETITE E VOLTE SEMPRE!");
 	}
 }
